@@ -37,6 +37,7 @@ const SingleProductPage = () => {
 	}
 
 	const { name, price, description, stock, stars, reviews, id: sku, company, images } = product;
+	console.log('product:', product);
 	return (
 		<Wrapper>
 			<PageHero title={name} product />
@@ -62,6 +63,10 @@ const SingleProductPage = () => {
 						<p className='info'>
 							<span>Brand :</span>
 							{company}
+						</p>
+						<p className='info'>
+							<span>Stock :</span>
+							{stock}
 						</p>
 						<hr />
 						{stock > 0 && <AddToCart product={product} />}
