@@ -37,7 +37,6 @@ const SingleProductPage = () => {
 	}
 
 	const { name, price, description, stock, stars, reviews, id: sku, company, images } = product;
-	console.log('product:', product);
 	return (
 		<Wrapper>
 			<PageHero title={name} product />
